@@ -9,7 +9,7 @@ import android.os.Build;
  * Resources类Api兼容
  *
  * @author 刘浩 2016-01-24 11-11
- * @version 1.0.0
+ * @version 1.2.0
  */
 public class Resources {
     /**
@@ -21,7 +21,7 @@ public class Resources {
      */
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public static final Drawable getDrawable(Context context, int id) {
-        if (Build.VERSION_CODES.LOLLIPOP < Build.VERSION.SDK_INT) {
+        if (Build.VERSION_CODES.LOLLIPOP>= Build.VERSION.SDK_INT) {
             //noinspection deprecation
             return context.getResources().getDrawable(id);
         } else {
