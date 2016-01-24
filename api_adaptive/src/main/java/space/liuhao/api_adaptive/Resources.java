@@ -29,5 +29,21 @@ public class Resources {
         }
     }
 
+    /**
+     * 获取一个颜色值
+     * @param context 上下文实体
+     * @param id 颜色Id
+     * @return 颜色值
+     */
+    @TargetApi(Build.VERSION_CODES.M)
+    public static final int getColor(Context context,int id){
+        if(Build.VERSION_CODES.LOLLIPOP_MR1>=Build.VERSION.SDK_INT){
+            //noinspection deprecation
+            return context.getResources().getColor(id);
+        }else{
+            return context.getResources().getColor(id,context.getTheme());
+        }
+
+    }
 
 }
