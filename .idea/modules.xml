@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ApiAdaptive.iml" filepath="$PROJECT_DIR$/ApiAdaptive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api_adaptive/api_adaptive.iml" filepath="$PROJECT_DIR$/api_adaptive/api_adaptive.iml" />
+    </modules>
+  </component>
+</project>
