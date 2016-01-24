@@ -9,7 +9,7 @@ import android.view.View;
  * 北京类Api兼容
  *
  * @author 刘浩 2016-01-24 15-14
- * @version 1.0.0
+ * @version 1.1.0
  */
 public class Background {
     /**
@@ -19,7 +19,7 @@ public class Background {
      */
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     public static final void setBackgroundDrawable(View view,Drawable drawable){
-        if(Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1<Build.VERSION.SDK_INT){
+        if(Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1>=Build.VERSION.SDK_INT){
             //noinspection deprecation
             view.setBackgroundDrawable(drawable);
         }else{
